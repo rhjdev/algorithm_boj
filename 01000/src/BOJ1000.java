@@ -7,6 +7,7 @@ public class BOJ1000 {
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		System.out.println(a + b);
+		
 	}
 
 }
