@@ -26,6 +26,12 @@ public class BOJ11653 {
 			System.out.println(sb);
 		} catch (NumberFormatException | IOException e) {
 			e.printStackTrace();
+		} finally {
+			try {
+				br.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 	}
 }
