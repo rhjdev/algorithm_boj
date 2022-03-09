@@ -9,14 +9,17 @@ public class BOJ10951 {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		try {
-			StringTokenizer st = new StringTokenizer(br.readLine());
-			int a = 0;
-			int b = 0;
-			while(st.hasMoreTokens()) {
-				a = Integer.parseInt(st.nextToken());
-				b = Integer.parseInt(st.nextToken());
+			String str;
+			StringTokenizer st;
+			StringBuilder sb = new StringBuilder();
+			
+			while((str=br.readLine()) != null) {
+				st = new StringTokenizer(str, " ");
+				int a = Integer.parseInt(st.nextToken());
+				int b = Integer.parseInt(st.nextToken());
+				sb.append(a + b).append("\n");
 			}
-			System.out.println(a + b);
+			System.out.print(sb);
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
